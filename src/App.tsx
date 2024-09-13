@@ -2,6 +2,9 @@ import "./App.css";
 import Greet from "./components/Greet";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
+import Oscar from "./components/Oscar";
+import Heading from "./components/Heading";
+import Status from "./components/Status";
 
 function App() {
   const name = {
@@ -24,6 +27,11 @@ function App() {
       <Greet name="Prime" messageCount={20} isLoggedIn={false} />
       <Person name={name} />
       <PersonList names={personList} />
+      <Status status="loading" />
+      <Oscar>
+        <h1> Hello this is react node</h1>
+      </Oscar>
+      <Heading>This is Heading</Heading>
     </div>
   );
 }
