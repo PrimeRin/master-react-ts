@@ -5,6 +5,8 @@ import PersonList from "./components/PersonList";
 import Oscar from "./components/Oscar";
 import Heading from "./components/Heading";
 import Status from "./components/Status";
+import ButtonClick from "./components/ButtonClick";
+import InputChange from "./components/InputChange";
 
 function App() {
   const name = {
@@ -32,6 +34,10 @@ function App() {
         <h1> Hello this is react node</h1>
       </Oscar>
       <Heading>This is Heading</Heading>
+      <ButtonClick
+        handleClick={(event, id) => console.log("Click..........", event, id)}
+      />
+      <InputChange value="Prime" onChange={(event) => console.log(event)} />
     </div>
   );
 }
