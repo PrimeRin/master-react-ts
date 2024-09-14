@@ -8,6 +8,7 @@ import Status from "./components/Status";
 import ButtonClick from "./components/ButtonClick";
 import InputChange from "./components/InputChange";
 import Container from "./components/Container";
+import User from "./components/State/User";
 
 function App() {
   const name = {
@@ -40,6 +41,7 @@ function App() {
       />
       <InputChange value="Prime" onChange={(event) => console.log(event)} />
       <Container styles={{ border: "1px solid black", padding: "1rem" }} />
+      <User/>
     </div>
   );
 }
