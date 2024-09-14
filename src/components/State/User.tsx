@@ -7,14 +7,14 @@ type UserProps = {
 }
 
 const User = () => {
-  const [user, setUser] = React.useState<UserProps | null>(null)
+  const [user, setUser] = useState<UserProps>({} as UserProps)
 
   const handleLogin = () => {
     setUser({name: "Prime", email: "gqE3v@example.com"})
   }
 
   const handleLogOut = () => {
-    setUser(null)
+    setUser({} as UserProps)
   }
 
   return (
